@@ -16,4 +16,4 @@ Los resultados obtenidos por cada método fueron comparados entre sí, así como
 
 Finalmente, cada implementación incluye referencias a los artículos y trabajos de investigación utilizados como base para su desarrollo.
 
-
+Así mismo se tiene la comparativa en el notebook `local_training_noncliped.ipynb`, donde se muestra el resultado global cuando se inicializan random los weights en cada cliente.
