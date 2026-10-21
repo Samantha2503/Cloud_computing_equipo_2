@@ -1,8 +1,17 @@
 # Offline Cloud Computing
 
-Durante esta actividad se empleó el modelo de Aprendizaje Federado con el dataset: MNIST
-Se empleó un modelo de tensorflow para su entrenamiento el cual se encuentra en (model_2.py)
-Posterior se realizó el split del dataset de modo offline y confidencial repartiendo a cada integrante un id con la partición que les correspondía para el entrenamiento, el workflow del mismo se encuentra en (local_training_2.ipynb)
-Posteriormente, dados los modelos "lmodel_x.keras", se empleó el FedAvg, FedMedian y Trimmed_mean, comparando los resultados de los mismos al igual que lo que se obtiene de un entrenamiento global centralizado en el notebook (avrg_fed.ipynb)
+Durante esta actividad se implementó un flujo de Aprendizaje Federado utilizando el conjunto de datos MNIST.
 
-Así mismo en cada modelo se tiene referencia del paper donde muestra como funcionan estos.
+Se empleó un modelo desarrollado en TensorFlow para el entrenamiento local de cada cliente. La definición de la arquitectura se encuentra en el archivo `model_2.py`.
+
+La partición del conjunto de datos se realizó de forma local y confidencial, fuera del repositorio, dividiendo el dataset en subconjuntos estadísticamente equivalentes y asignando una partición a cada integrante del equipo. El proceso de entrenamiento local se encuentra documentado en el notebook `local_training_2.ipynb`.
+
+Una vez generados los modelos locales (`lmodel_x.keras`), se implementaron y compararon distintas estrategias de agregación federada:
+
+- FedAvg
+- FedMedian
+- Trimmed Mean
+
+Los resultados obtenidos por cada método fueron comparados entre sí, así como contra un entrenamiento centralizado tradicional. El proceso de agregación y evaluación se encuentra en el notebook `avrg_fed.ipynb`.
+
+Finalmente, cada implementación incluye referencias a los artículos y trabajos de investigación utilizados como base para su desarrollo.
