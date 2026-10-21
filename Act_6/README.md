@@ -15,3 +15,5 @@ Una vez generados los modelos locales (`lmodel_x.keras`), se implementaron y com
 Los resultados obtenidos por cada método fueron comparados entre sí, así como contra un entrenamiento centralizado tradicional. El proceso de agregación y evaluación se encuentra en el notebook `avrg_fed.ipynb`.
 
 Finalmente, cada implementación incluye referencias a los artículos y trabajos de investigación utilizados como base para su desarrollo.
+
+
